@@ -18,7 +18,7 @@ class NameViews(APIView):
         name_text = data.get('name_text')
         print("name_text: " + name_text)
         print(data)
-        audio_file_path = "C:\\Users\\parim\\hackservice\\"
+        audio_file_path = "/home/azureuser/hackathon/hackservice/"
         audio_file = "output.mp3"
 
         # Google Cloud Text to Speech API
