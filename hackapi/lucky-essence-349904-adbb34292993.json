@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "lucky-essence-349904",
+  "private_key_id": "adbb34292993323f82246af05f2fbcec6373fbc5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQDClRUkGiQMHxwT\niXUiIxjif1Vk3FtWTfoC+nDrqSVIdKJLw+eRlSF25YR2Xtob7+qZ/ImQ9QqF/aR0\nmox14dMSEDVim60JfD0SwUFpOT3KfuMsM+0Y3vX8N7dhotFvp1oQxP1Vzx6YjjwC\nVZX356bfb9brfZp3fmp1/7AIVC99jrE+tLoBtPD+IrFt68z60Fm4Kx+oCBbnpG31\nuUtkQYGPA5bBFxYOW5NtY69NM5592aETaLMl+JHvOxI83MpO+WQXq+Zb9CxGW/XB\nyJTFghJos37ktL1AUhzTPUFxgCoijbR1W+VMJ6DtjCuoFoImmToCJO7X+xLJ4p+V\ncTHCc11vAgMBAAECggEAAOHqLpPXPV8nY0+CNA+5fOaoid/RfTbtbRtCJWTMl2UG\noraOxFRyeG7hTKydFFqA3bf/pc0v3/ARRYnzO17OtvKT3wgOkW7YQM9+0gyuix0K\n3/DtM13PEuIwJvBM+t0HLCDiZeNqo64Or9Q8mzdUCN8Qmw2AibvMnSO/Z4Nwaoai\nIlkxL4X2BZPFGUxkFqmYFWWqOVDDx7Ppax+72CGnrdWmo9cQD2ikManptJ48MYy9\no2eERJuoCE0B5rByE92Ukg9HW0Ay8u+cV5wjGoH92G2b0y+JAHGqTC0pM6ctRmNE\nFq3fuyNM5y1iYdVm9xNlb/MrOGcT701tgvm7VNwJgQKBgQDkhy0wiJ1rSw65z3lH\nagVYJpzCwRmhhX9ubG62yhlAfA58X7bKZSkSPnsbWX7E20gDrYGwfew7HKeeU8wJ\n6i7ozDqTmNwURScyVrqsXjGj0Buk40wUbq4jQl8bdFeC7H3QZD8M0dPH5m25/Sz8\nvPbEll0xTfpNXA/TBKksaSWpMQKBgQDZ+T8hUU+/vyG9aroLIp0jyWyDWw4s3I2X\nxWS72wNwagIzDMQP4gNB36VpcL+uUbKy6KbAuRwMfUvfJ/OQoM1STvjDMXJ77M+X\nZNqC538S+6/6wzYyyC1xKII8/Z0U+3EGc3hux+uhVSs/xBZDfx6vubdptTlw4NJI\nG2DKnbHInwKBgC+Q91X3yZRQjiMczSiRJ8WeW9ipqrUU/V41kaHYVQM4DyfSIFDm\nV3MlsCgUK6+72LRzQ+BBhY8UOstYs8qIhPUNtU+NbJmHf04aAUbpYDmxkl9ytB44\nn2RVZ0hmoeRtZw6eHwWDEyqzirlAukFs74whpAokKeo6NEz+1luZEy6xAoGAHyGJ\n8qg6S5hwqSzlBVIcP1A1P01x6NZXIqX+jRXql9OMHN5l4h7VeEMIzNZdifgBHaw8\npKnLZ709aNG755wPtwGwZbBaOXjI7UZqLugBLiTkLVxUEUylsNOoRi2ykZyXt+Ql\n/yxuasxPMPxAccNmDpLnryFC4uw5HDNMz6NWEOECgYACFJ8uH6Jg+zm9y6xkC1xO\nBcCzmUfjoWl4rPK4dGWtfIPtywyo6hACIQei+ut52/GkpJxTFKN8tbcW+q1FQw3r\n2+Ri3yNmOvpnOQmvXTYaTD/+VVVvYxjQ6ZYLFBODMZIZsgQQCUVWdJ6AS54J1lOY\nnZG7PDN0//Zgrrvbh0oAHg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "hackathon@lucky-essence-349904.iam.gserviceaccount.com",
+  "client_id": "116077751402050148657",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/hackathon%40lucky-essence-349904.iam.gserviceaccount.com"
+}
