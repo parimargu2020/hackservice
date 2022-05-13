@@ -18,6 +18,7 @@ class NameViews(APIView):
         name_text = data.get('name_text')
         print("name_text: " + name_text)
         print(data)
+        #audio_file_path = "C:\\Users\\parim\\hackservice\\"
         audio_file_path = "/home/azureuser/hackathon/hackservice/"
         audio_file = "output.mp3"
 
@@ -30,7 +31,7 @@ class NameViews(APIView):
         atts = ATextToSpeech(name_text, language)
         audio_file = atts.convert_to_audio()
 
-        data['audio_file'] = audio_file_path + audio_file
+        data['audio_file'] = audio_file
 
         serializer = NameSerializer(data=data)
         if serializer.is_valid():
