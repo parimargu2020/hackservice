@@ -16,6 +16,9 @@ class NameViews(APIView):
         print("Inside post function of NameViews")
         data = request.data
         name_text = data.get('name_text')
+        language = data.get('language')
+        voice_name = data.get('voice_name')
+        std_ctm_pronunciation = data.get('std_ctm_pronunciation')
         print("name_text: " + name_text)
         print(data)
         #audio_file_path = "C:\\Users\\parim\\hackservice\\"
@@ -27,8 +30,8 @@ class NameViews(APIView):
         #audio_file = gtts.convert_to_audio()
 
         # Azure Cloud Text to Speech API
-        language = 'en'
-        atts = ATextToSpeech(name_text, language)
+        #language = 'en'
+        atts = ATextToSpeech(name_text, language, voice_name, std_ctm_pronunciation)
         audio_file = atts.convert_to_audio()
 
         data['audio_file'] = audio_file

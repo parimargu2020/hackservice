@@ -6,14 +6,23 @@ from azure.storage.blob import BlobServiceClient, BlobClient
 speech_key, service_region = "484f2a1cb1cd45bebef08166c7cd9ebf", "eastus"
 AZURE_STORAGE_CONNECTION_STRING_STR = "DefaultEndpointsProtocol=https;AccountName=hackathonsg;AccountKey=+x+D6pN0cQn/s/Q524LY0SbJFyhQacOJVxRNIOLO+gAJF8vowrECBFaQjDsreyiFd5seQwuyno3/+AStWyQxhg==;EndpointSuffix=core.windows.net"
 
+#language_dict = {'us-EN': ['JennyNeural', 'ChristopherNeural'], 'us-IN': []}
+
 class ATextToSpeech:
     name_text = None
     language = None
+    voice_name = None
+    std_ctm_pronunciation = None
+    speaking_style = None
+    speaking_speed = None
+    speaking_picth = None
 
-    def __init__(self, name_text, language):
+    def __init__(self, name_text, language, voice_name, std_ctm_pronunciation):
         print("Inside __init__ function of ATextToSpeech")
         self.name_text = name_text
         self.language = language
+        self.voice_name = voice_name
+        self.std_ctm_pronunciation = std_ctm_pronunciation
         print("Exiting out of __init__ function of ATextToSpeech")
 
     def convert_to_audio(self):
@@ -29,11 +38,16 @@ class ATextToSpeech:
             speechsdk.SpeechSynthesisOutputFormat.Audio16Khz32KBitRateMonoMp3)
 
         # The language of the voice that speaks.
-        speech_config.speech_synthesis_voice_name = 'en-US-JennyNeural'
+        # language
+        #speech_config.speech_synthesis_language = "en-US"
+        speech_config.speech_synthesis_language = self.language
+        # language + voice
+        #speech_config.speech_synthesis_voice_name = self.language + '-' + self.voice_name
+        speech_config.speech_synthesis_voice_name = self.voice_name
 
         # Creates a speech synthesizer using file as audio output.
         # Replace with your own audio file name.
-        audio_file = self.name_text.lower().replace(' ', '-') + ".mp3"
+        audio_file = self.name_text.lower().replace(' ', '-') + '-' + self.std_ctm_pronunciation.lower() + ".mp3"
         audio_file_config = speechsdk.audio.AudioOutputConfig(filename=audio_file)
         speech_synthesizer = speechsdk.SpeechSynthesizer(speech_config=speech_config, audio_config=audio_file_config)
 
@@ -55,7 +69,7 @@ class ATextToSpeech:
 
         # Upload the created file
         with open(audio_file, "rb") as data:
-            blobClient.upload_blob(data)
+            blobClient.upload_blob(data, overwrite=True)
 
         audio_file_url = blobClient.url
         print(audio_file_url)
